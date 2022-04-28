@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { load, dump } from 'js-yaml';
+import { dump } from 'js-yaml';
 import { InferenceServiceK8s } from 'src/app/types/kfserving/v1beta1';
 
 @Component({

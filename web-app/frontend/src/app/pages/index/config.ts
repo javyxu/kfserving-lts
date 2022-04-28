@@ -3,15 +3,12 @@ import {
   StatusValue,
   ActionListValue,
   ActionIconValue,
-  ActionButtonValue,
-  TRUNCATE_TEXT_SIZE,
-  MenuValue,
+  // TRUNCATE_TEXT_SIZE,
   DateTimeValue,
   DialogConfig,
   TableConfig,
 } from 'kubeflow';
 import { InferenceServiceK8s } from 'src/app/types/kfserving/v1beta1';
-import { parseRuntime } from './utils';
 
 export function generateDeleteConfig(svc: InferenceServiceK8s): DialogConfig {
   return {
@@ -38,7 +35,7 @@ export const defaultConfig: TableConfig = {
       matColumnDef: 'name',
       value: new PropertyValue({
         field: 'metadata.name',
-        truncate: TRUNCATE_TEXT_SIZE.SMALL,
+        // truncate: TRUNCATE_TEXT_SIZE.SMALL,
         popoverField: 'metadata.name',
         isLink: true,
       }),
@@ -70,14 +67,14 @@ export const defaultConfig: TableConfig = {
       value: new PropertyValue({
         field: 'ui.protocolVersion',
       }),
-      minWidth: '40px',
+      // minWidth: '40px',
     },
     {
       matHeaderCellDef: 'Storage URI',
       matColumnDef: 'storageUri',
       value: new PropertyValue({
         field: 'ui.storageUri',
-        truncate: TRUNCATE_TEXT_SIZE.MEDIUM,
+        // truncate: TRUNCATE_TEXT_SIZE.MEDIUM,
         popoverField: 'ui.storageUri',
       }),
     },

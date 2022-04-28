@@ -1,5 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { GrafanaService } from 'src/app/services/grafana.service';
+import { Component, Input } from '@angular/core';
 import { InferenceServiceStatus } from 'src/app/types/kfserving/v1beta1';
 import { GrafanaIframeConfig } from 'src/app/types/grafana';
 

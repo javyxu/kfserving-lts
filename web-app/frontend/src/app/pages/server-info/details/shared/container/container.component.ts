@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { V1Container } from '@kubernetes/client-node';
-import { ListEntry, ChipDescriptor } from 'kubeflow';
+import { ChipDescriptor } from 'kubeflow';
 
 @Component({
   selector: 'app-container-details',

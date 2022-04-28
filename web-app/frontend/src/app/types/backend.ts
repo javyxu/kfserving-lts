@@ -1,4 +1,4 @@
-import { BackendResponse, Status, STATUS_TYPE, K8sObject } from 'kubeflow';
+import { BackendResponse, K8sObject } from 'kubeflow';
 import { InferenceServiceK8s } from './kfserving/v1beta1';
 
 export interface MWABackendResponse extends BackendResponse {

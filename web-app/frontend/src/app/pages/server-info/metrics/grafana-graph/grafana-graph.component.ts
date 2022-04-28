@@ -1,6 +1,6 @@
 import { Component, Input, HostBinding } from '@angular/core';
 import { GrafanaService } from 'src/app/services/grafana.service';
-import { Observable, of, throwError } from 'rxjs';
+import { Observable, throwError } from 'rxjs';
 import { map, catchError } from 'rxjs/operators';
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 import { GrafanaIframeConfig } from 'src/app/types/grafana';

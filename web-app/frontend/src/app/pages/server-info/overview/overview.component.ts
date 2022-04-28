@@ -1,12 +1,9 @@
 import { Component, Input } from '@angular/core';
 import {
-  NamespaceService,
   ListEntry,
   ChipDescriptor,
-  K8sObject,
 } from 'kubeflow';
 import {
-  getReadyCondition,
   getPredictorType,
   getK8sObjectStatus,
   getPredictorExtensionSpec,

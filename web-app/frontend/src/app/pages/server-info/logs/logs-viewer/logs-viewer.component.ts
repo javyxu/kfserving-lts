@@ -2,15 +2,10 @@ import {
   Component,
   Input,
   ViewChild,
-  NgZone,
-  SimpleChanges,
-  OnChanges,
   HostBinding,
-  ElementRef,
   AfterViewInit,
 } from '@angular/core';
 import { CdkVirtualScrollViewport } from '@angular/cdk/scrolling';
-import { take } from 'rxjs/operators';
 
 @Component({
   selector: 'app-logs-viewer',

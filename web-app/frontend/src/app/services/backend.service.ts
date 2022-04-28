@@ -3,7 +3,6 @@ import { BackendService, SnackBarService, K8sObject } from 'kubeflow';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
-import { svcHasComponent, getSvcComponents } from '../shared/utils';
 import { InferenceServiceK8s } from '../types/kfserving/v1beta1';
 import { MWABackendResponse, InferenceServiceLogs } from '../types/backend';
 

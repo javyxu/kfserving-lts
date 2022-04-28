@@ -1,10 +1,9 @@
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { HttpClient } from '@angular/common/http';
-import { catchError, map, tap, switchAll, concatAll } from 'rxjs/operators';
+import { catchError, map, concatAll } from 'rxjs/operators';
 import { BackendService, SnackBarService } from 'kubeflow';
-import { ReplaySubject, Observable, of, throwError } from 'rxjs';
-import { MappingsContext } from 'source-list-map';
+import { ReplaySubject, Observable } from 'rxjs';
 import { GrafanaDashboard } from '../types/grafana';
 
 @Injectable({
